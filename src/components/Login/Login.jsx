@@ -68,7 +68,7 @@ function Login() {
             <div className="form_div">
                 <input 
                 type="text" 
-                className="form_input" 
+                className={`form_input ${userFormErrs.emailErr ? "border-danger" : ""}`}
                 placeholder=" "
                 id='email'
                 value={userForm.email}
@@ -84,7 +84,7 @@ function Login() {
            <div className="form_div">
                 <input
                 type="password" 
-                className="form_input" 
+                className={`form_input ${userFormErrs.emailErr ? "border-danger" : ""}`}
                 placeholder=" "
                 id='password'
                 value={userForm.password}
